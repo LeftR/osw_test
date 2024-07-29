@@ -37,7 +37,7 @@ class LocationService {
           latitude: userLocation.latitude!, longitude: userLocation.longitude!);
     } catch (e) {
       if (kDebugMode) {
-        print('Nie mogę ustalić lokalizacji GPS: $e');
+        print('Could not get the location: $e');
       }
     }
     return _currentLocation;
